@@ -85,7 +85,7 @@ Equipment ID:    8px, weight 600, #1e3a8a, monospace
 <defs>
   <!-- 机动车道：细密水平线 -->
   <pattern id="hatch-carriageway" patternUnits="userSpaceOnUse" width="6" height="6">
-    <line x1="0" y1="3" x2="6" y2="3" stroke="#c0c0c0" stroke-width="0.3"/>
+    <line x1="0" y1="3" x2="6" y2="3" stroke="#c8c8c8" stroke-width="0.3"/>
   </pattern>
 
   <!-- 非机动车道：稀疏斜线 -->
@@ -104,9 +104,9 @@ Equipment ID:    8px, weight 600, #1e3a8a, monospace
   </pattern>
 
   <!-- 绿化带：圆形树木符号 -->
-  <pattern id="hatch-greenbelt" patternUnits="userSpaceOnUse" width="16" height="16">
-    <circle cx="8" cy="8" r="5" fill="none" stroke="#555555" stroke-width="0.4"/>
-    <circle cx="8" cy="8" r="1.5" fill="#555555"/>
+  <pattern id="hatch-greenbelt" patternUnits="userSpaceOnUse" width="20" height="20">
+    <circle cx="10" cy="10" r="6" fill="none" stroke="#555555" stroke-width="0.4"/>
+    <circle cx="10" cy="10" r="1.8" fill="#555555"/>
   </pattern>
 
   <!-- 交通岛/渠化岛：单向斜线 -->
@@ -257,3 +257,7 @@ Equipment ID:    8px, weight 600, #1e3a8a, monospace
 | 标注框 | 直角方框 + 细线 | 圆角方框 + 彩色边框 |
 | 设备符号 | 深蓝小方块 + 字母编号 | 彩色图标 |
 | 色彩数量 | ≤4 色 | 8-12 色 |
+
+## 参考模板
+
+完整工程图纸风格的行人过街部署平面图示例：[templates/deployment-plan-engineering.svg](../templates/deployment-plan-engineering.svg)
