@@ -1,0 +1,390 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+    .title { font-size: 13px; font-weight: 700; fill: #111827; }
+    .label { font-size: 10px; font-weight: 600; fill: #111827; }
+    .sub-label { font-size: 9px; font-weight: 400; fill: #6b7280; }
+    .callout-title { font-size: 10px; font-weight: 600; fill: #1e3a8a; }
+    .callout-param { font-size: 9px; font-weight: 400; fill: #6b7280; }
+    .dim-text { font-size: 8px; font-weight: 400; fill: #374151; }
+    .dim-label { font-size: 7.5px; font-weight: 400; fill: #6b7280; }
+    .legend-title { font-size: 11px; font-weight: 700; fill: #111827; }
+    .legend-text { font-size: 9px; font-weight: 400; fill: #374151; }
+  </style>
+  <defs>
+    <pattern id="hatch-median" patternUnits="userSpaceOnUse" width="8" height="8">
+      <path d="M 0,8 L 8,0 M 0,0 L 8,8" stroke="#d97706" stroke-width="0.6" fill="none"/>
+    </pattern>
+    <pattern id="trees" patternUnits="userSpaceOnUse" width="40" height="40">
+      <circle cx="20" cy="20" r="9" fill="#86efac" stroke="#22c55e" stroke-width="0.5"/>
+      <circle cx="20" cy="20" r="2.5" fill="#15803d"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#ffffff"/>
+
+  <!-- ===== Road Structure (top to bottom) ===== -->
+  <!-- North sidewalk: y=135.2, h=36 → 3.0m -->
+  <rect x="60" y="135.2" width="1080" height="36.0" fill="#e5e7eb"/>
+  <!-- North green belt: y=171.2, h=24 → 2.0m -->
+  <rect x="60" y="171.2" width="1080" height="24.0" fill="#bbf7d0"/>
+  <rect x="60" y="171.2" width="1080" height="24.0" fill="url(#trees)"/>
+  <!-- North bike lane: y=195.2, h=42 → 3.5m -->
+  <rect x="60" y="195.2" width="1080" height="42.0" fill="#6b7280"/>
+  <!-- Edge line -->
+  <rect x="60" y="237.2" width="1080" height="4.8" fill="#9ca3af"/>
+  <!-- North carriageway: y=242.0, h=126 → 3×3.5m=10.5m -->
+  <rect x="60" y="242.0" width="1080" height="126.0" fill="#4b5563"/>
+  <!-- Median: y=368.0, h=24 → 2.0m -->
+  <rect x="60" y="368.0" width="1080" height="24.0" fill="#fef3c7"/>
+  <rect x="60" y="368.0" width="1080" height="24.0" fill="url(#hatch-median)"/>
+  <rect x="60" y="368.0" width="1080" height="24.0" fill="none" stroke="#d97706" stroke-width="0.8"/>
+  <!-- South carriageway: y=392.0, h=126 → 3×3.5m=10.5m -->
+  <rect x="60" y="392.0" width="1080" height="126.0" fill="#4b5563"/>
+  <!-- Edge line -->
+  <rect x="60" y="518.0" width="1080" height="4.8" fill="#9ca3af"/>
+  <!-- South bike lane: y=522.8, h=42 → 3.5m -->
+  <rect x="60" y="522.8" width="1080" height="42.0" fill="#6b7280"/>
+  <!-- South green belt: y=564.8, h=24 → 2.0m -->
+  <rect x="60" y="564.8" width="1080" height="24.0" fill="#bbf7d0"/>
+  <rect x="60" y="564.8" width="1080" height="24.0" fill="url(#trees)"/>
+  <!-- South sidewalk: y=588.8, h=36 → 3.0m -->
+  <rect x="60" y="588.8" width="1080" height="36.0" fill="#e5e7eb"/>
+
+  <!-- ===== Lane Markings ===== -->
+  <!-- Dashed lane dividers (carriageway) -->
+  <line x1="60" y1="284.0" x2="1140" y2="284.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="14,10"/>
+  <line x1="60" y1="326.0" x2="1140" y2="326.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="14,10"/>
+  <line x1="60" y1="434.0" x2="1140" y2="434.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="14,10"/>
+  <line x1="60" y1="476.0" x2="1140" y2="476.0" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="14,10"/>
+  <!-- Solid edge lines -->
+  <line x1="60" y1="195.2" x2="1140" y2="195.2" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="60" y1="237.2" x2="1140" y2="237.2" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="60" y1="522.8" x2="1140" y2="522.8" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="60" y1="564.8" x2="1140" y2="564.8" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- ===== Crosswalk Zebra Stripes (horizontal bars) ===== -->
+  <rect x="562.0" y="195.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="206.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="217.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="228.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="239.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="250.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="261.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="272.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="283.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="294.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="305.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="316.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="327.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="338.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="349.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="360.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="371.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="382.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="393.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="404.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="415.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="426.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="437.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="448.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="459.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="470.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="481.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="492.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="503.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="514.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="525.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="536.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="547.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+  <rect x="562.0" y="558.2" width="76.0" height="4.0" fill="#ffffff" opacity="0.92"/>
+
+  <!-- ===== Crosswalk Stop Lines ===== -->
+  <line x1="648.0" y1="242.0" x2="648.0" y2="368.0" stroke="#ffffff" stroke-width="3.5"/>
+  <line x1="552.0" y1="392.0" x2="552.0" y2="518.0" stroke="#ffffff" stroke-width="3.5"/>
+
+  <!-- ===== Direction Arrows (North bound lanes → left) ===== -->
+  <g transform="translate(706.0, 263.0) rotate(-90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(816.0, 263.0) rotate(-90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <g transform="translate(706.0, 305.0) rotate(-90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(816.0, 305.0) rotate(-90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <g transform="translate(706.0, 347.0) rotate(-90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(816.0, 347.0) rotate(-90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <!-- South bound lanes → right -->
+  <g transform="translate(494.0, 413.0) rotate(90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(384.0, 413.0) rotate(90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <g transform="translate(494.0, 455.0) rotate(90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(384.0, 455.0) rotate(90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <g transform="translate(494.0, 497.0) rotate(90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(384.0, 497.0) rotate(90)">
+    <path d="M 0,-16 L 0,8 M -5,-11 L 0,-18 L 5,-11" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- ===== Radar-Video Sensor (North Green Belt) ===== -->
+  <g transform="translate(630.0, 183.2)">
+    <rect x="-3" y="-1" width="6" height="10" fill="#374151"/>
+    <rect x="-7" y="-9" width="14" height="9" rx="2" fill="#1e40af" stroke="#1e3a8a" stroke-width="0.8"/>
+    <circle cx="0" cy="-4.5" r="2" fill="#60a5fa"/>
+  </g>
+  <!-- Detection zone: 80° FOV, r=385, covers full crosswalk -->
+  <path d="M 630.0,183.2 L 877.5,478.1 A 385,385 0 0,1 382.5,478.1 Z" fill="#3b82f6" fill-opacity="0.10" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="6,3"/>
+
+  <!-- Sensor callout box -->
+  <rect x="680.0" y="55" width="200" height="48" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="690.0" y="71" class="callout-title">&#x96f7;&#x89c6;&#x4e00;&#x4f53;&#x673a; Radar-Video Sensor</text>
+  <text x="690.0" y="85" class="callout-param">FOV: 80&#xb0;  Range: &#x2264;25m</text>
+  <text x="690.0" y="97" class="callout-param">H: &#x2264;5.5m  Det: pedestrian+vehicle</text>
+  <line x1="780.0" y1="103" x2="630.0" y2="171.2" stroke="#93c5fd" stroke-width="0.8"/>
+  <circle cx="630.0" cy="171.2" r="2.5" fill="#3b82f6"/>
+
+  <!-- ===== Traffic Signs (at curb next to carriageway / 快车道路沿石) ===== -->
+  <!-- North: 注意行人 Warning Sign — at curb y=237.2, 5m east of crosswalk -->
+  <g transform="translate(698.0, 237.2)">
+    <line x1="0" y1="-6" x2="0" y2="10" stroke="#374151" stroke-width="2"/>
+    <polygon points="0,-18 10,2 -10,2" fill="#fbbf24" stroke="#111827" stroke-width="0.8"/>
+    <circle cx="0" cy="-8" r="1.8" fill="#111827"/>
+    <line x1="0" y1="-6" x2="0" y2="-1" stroke="#111827" stroke-width="0.8"/>
+  </g>
+  <text x="698.0" y="258.0" text-anchor="middle" font-size="8" font-weight="400" fill="#ffffff">&#x6ce8;&#x610f;&#x884c;&#x4eba;</text>
+  <!-- South: 注意行人 Warning Sign — at curb y=522.8, 5m west of crosswalk -->
+  <g transform="translate(502.0, 522.8)">
+    <line x1="0" y1="-6" x2="0" y2="10" stroke="#374151" stroke-width="2"/>
+    <polygon points="0,-18 10,2 -10,2" fill="#fbbf24" stroke="#111827" stroke-width="0.8"/>
+    <circle cx="0" cy="-8" r="1.8" fill="#111827"/>
+    <line x1="0" y1="-6" x2="0" y2="-1" stroke="#111827" stroke-width="0.8"/>
+  </g>
+  <text x="502.0" y="543.0" text-anchor="middle" font-size="8" font-weight="400" fill="#ffffff">&#x6ce8;&#x610f;&#x884c;&#x4eba;</text>
+  <!-- North: 人行横道 Crossing Sign (diamond) — at curb y=237.2, 20m east -->
+  <g transform="translate(878.0, 237.2)">
+    <line x1="0" y1="-4" x2="0" y2="10" stroke="#374151" stroke-width="2"/>
+    <polygon points="0,-16 10,0 0,16 -10,0" fill="#fbbf24" stroke="#111827" stroke-width="0.8"/>
+  </g>
+  <text x="878.0" y="258.0" text-anchor="middle" font-size="8" font-weight="400" fill="#ffffff">&#x4eba;&#x884c;&#x6a2a;&#x9053;</text>
+  <!-- South: 人行横道 Crossing Sign (diamond) — at curb y=522.8, 20m west -->
+  <g transform="translate(322.0, 522.8)">
+    <line x1="0" y1="-4" x2="0" y2="10" stroke="#374151" stroke-width="2"/>
+    <polygon points="0,-16 10,0 0,16 -10,0" fill="#fbbf24" stroke="#111827" stroke-width="0.8"/>
+  </g>
+  <text x="322.0" y="543.0" text-anchor="middle" font-size="8" font-weight="400" fill="#ffffff">&#x4eba;&#x884c;&#x6a2a;&#x9053;</text>
+
+  <!-- ===== Section Labels ===== -->
+  <text x="600.0" y="156.2" text-anchor="middle" class="label">North sidewalk / &#x5317;&#x4fa7;&#x4eba;&#x884c;&#x9053;</text>
+  <text x="600.0" y="609.8" text-anchor="middle" class="label">South sidewalk / &#x5357;&#x4fa7;&#x4eba;&#x884c;&#x9053;</text>
+
+  <!-- ===== Legend ===== -->
+  <rect x="70" y="45" width="195" height="175" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1"/>
+  <text x="80" y="63" class="legend-title">&#x56fe;&#x4f8b; / Legend</text>
+  <line x1="78" y1="69" x2="257" y2="69" stroke="#d1d5db" stroke-width="0.5"/>
+  <rect x="82" y="78" width="14" height="10" rx="1" fill="#4b5563" stroke="#9ca3af" stroke-width="0.3"/>
+  <text x="104" y="87" class="legend-text">&#x673a;&#x52a8;&#x8f66;&#x9053; Carriageway</text>
+  <rect x="82" y="97" width="14" height="10" rx="1" fill="#6b7280" stroke="#9ca3af" stroke-width="0.3"/>
+  <text x="104" y="106" class="legend-text">&#x975e;&#x673a;&#x52a8;&#x8f66;&#x9053; Bike lane</text>
+  <rect x="82" y="116" width="14" height="10" rx="1" fill="#bbf7d0" stroke="#9ca3af" stroke-width="0.3"/>
+  <text x="104" y="125" class="legend-text">&#x7eff;&#x5316;&#x5e26; Green belt</text>
+  <rect x="82" y="135" width="14" height="10" rx="1" fill="#e5e7eb" stroke="#9ca3af" stroke-width="0.3"/>
+  <text x="104" y="144" class="legend-text">&#x4eba;&#x884c;&#x9053; Sidewalk</text>
+  <rect x="82" y="154" width="14" height="10" rx="1" fill="#fef3c7" stroke="#9ca3af" stroke-width="0.3"/>
+  <text x="104" y="163" class="legend-text">&#x4e2d;&#x592e;&#x5206;&#x9694;&#x5e26; Median</text>
+  <rect x="84" y="174" width="10" height="7" rx="1.5" fill="#1e40af"/>
+  <circle cx="89" cy="178" r="1.5" fill="#60a5fa"/>
+  <text x="104" y="182" class="legend-text">&#x96f7;&#x89c6;&#x4e00;&#x4f53;&#x673a; Sensor</text>
+  <path d="M 82,197 L 96,191 A 14,14 0 0,1 96,203 Z" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="0.6" stroke-dasharray="3,2"/>
+  <text x="104" y="201" class="legend-text">&#x68c0;&#x6d4b;&#x8303;&#x56f4; Detection zone</text>
+
+  <!-- ===== Dimension Annotations (Right Side) ===== -->
+  <!-- Level 1: Individual section widths -->
+  <g id="dim-extensions" stroke="#9ca3af" stroke-width="0.35" fill="none">
+    <line x1="1142" y1="135.2" x2="1205" y2="135.2"/>
+    <line x1="1142" y1="171.2" x2="1205" y2="171.2"/>
+    <line x1="1142" y1="195.2" x2="1205" y2="195.2"/>
+    <line x1="1142" y1="237.2" x2="1205" y2="237.2"/>
+    <line x1="1142" y1="284.0" x2="1190" y2="284.0"/>
+    <line x1="1142" y1="326.0" x2="1190" y2="326.0"/>
+    <line x1="1142" y1="368.0" x2="1205" y2="368.0"/>
+    <line x1="1142" y1="392.0" x2="1205" y2="392.0"/>
+    <line x1="1142" y1="434.0" x2="1190" y2="434.0"/>
+    <line x1="1142" y1="476.0" x2="1190" y2="476.0"/>
+    <line x1="1142" y1="518.0" x2="1205" y2="518.0"/>
+    <line x1="1142" y1="564.8" x2="1205" y2="564.8"/>
+    <line x1="1142" y1="588.8" x2="1205" y2="588.8"/>
+    <line x1="1142" y1="624.8" x2="1205" y2="624.8"/>
+  </g>
+
+  <!-- Dim lines + arrows + text: Level 1 at x=1180 -->
+  <g id="dim-lines-L1" stroke="#374151" stroke-width="0.5" fill="#374151">
+    <!-- Sidewalk N: 135.2→171.2 (36px=3.0m) -->
+    <line x1="1180" y1="138" x2="1180" y2="168.2"/>
+    <polygon points="1180,135.2 1177.5,140 1182.5,140"/>
+    <polygon points="1180,171.2 1177.5,166.4 1182.5,166.4"/>
+    <!-- Green belt N: 171.2→195.2 (24px=2.0m) -->
+    <line x1="1180" y1="174" x2="1180" y2="192.4"/>
+    <polygon points="1180,171.2 1177.5,175.6 1182.5,175.6"/>
+    <polygon points="1180,195.2 1177.5,190.8 1182.5,190.8"/>
+    <!-- Bike lane N: 195.2→237.2 (42px=3.5m) -->
+    <line x1="1180" y1="198" x2="1180" y2="234.4"/>
+    <polygon points="1180,195.2 1177.5,200 1182.5,200"/>
+    <polygon points="1180,237.2 1177.5,232.4 1182.5,232.4"/>
+    <!-- Carriageway N: 237.2→368.0 (130.8px≈10.9m, shown as 3×3.5m) -->
+    <line x1="1180" y1="240" x2="1180" y2="365.2"/>
+    <polygon points="1180,237.2 1177.5,242 1182.5,242"/>
+    <polygon points="1180,368.0 1177.5,363.2 1182.5,363.2"/>
+    <!-- Median: 368.0→392.0 (24px=2.0m) -->
+    <line x1="1180" y1="371" x2="1180" y2="389"/>
+    <polygon points="1180,368.0 1177.5,372.4 1182.5,372.4"/>
+    <polygon points="1180,392.0 1177.5,387.6 1182.5,387.6"/>
+    <!-- Carriageway S: 392.0→518.0 -->
+    <line x1="1180" y1="395" x2="1180" y2="515"/>
+    <polygon points="1180,392.0 1177.5,396.8 1182.5,396.8"/>
+    <polygon points="1180,518.0 1177.5,513.2 1182.5,513.2"/>
+    <!-- Bike lane S: 518.0→564.8 (with edge line, ~3.9m, labeled 3.5m) -->
+    <line x1="1180" y1="521" x2="1180" y2="562"/>
+    <polygon points="1180,518.0 1177.5,522.8 1182.5,522.8"/>
+    <polygon points="1180,564.8 1177.5,560 1182.5,560"/>
+    <!-- Green belt S: 564.8→588.8 -->
+    <line x1="1180" y1="567.6" x2="1180" y2="586"/>
+    <polygon points="1180,564.8 1177.5,569.2 1182.5,569.2"/>
+    <polygon points="1180,588.8 1177.5,584.4 1182.5,584.4"/>
+    <!-- Sidewalk S: 588.8→624.8 -->
+    <line x1="1180" y1="591.6" x2="1180" y2="622"/>
+    <polygon points="1180,588.8 1177.5,593.6 1182.5,593.6"/>
+    <polygon points="1180,624.8 1177.5,620 1182.5,620"/>
+  </g>
+
+  <!-- Dimension text: Level 1 -->
+  <text x="1192" y="156.5" class="dim-text">3.0m</text>
+  <text x="1192" y="186.5" class="dim-text">2.0m</text>
+  <text x="1192" y="219.5" class="dim-text">3.5m</text>
+  <text x="1192" y="306" class="dim-text">3&#xd7;3.5m</text>
+  <text x="1192" y="383.5" class="dim-text">2.0m</text>
+  <text x="1192" y="458" class="dim-text">3&#xd7;3.5m</text>
+  <text x="1192" y="544.5" class="dim-text">3.5m</text>
+  <text x="1192" y="580" class="dim-text">2.0m</text>
+  <text x="1192" y="610" class="dim-text">3.0m</text>
+
+  <!-- Dimension labels (section names) -->
+  <text x="1225" y="156.5" class="dim-label">&#x4eba;&#x884c;&#x9053;</text>
+  <text x="1219" y="186.5" class="dim-label">&#x7eff;&#x5316;&#x5e26;</text>
+  <text x="1222" y="219.5" class="dim-label">&#x975e;&#x673a;&#x52a8;&#x8f66;&#x9053;</text>
+  <text x="1225" y="306" class="dim-label">&#x673a;&#x52a8;&#x8f66;&#x9053;</text>
+  <text x="1219" y="383.5" class="dim-label">&#x4e2d;&#x592e;&#x5206;&#x9694;&#x5e26;</text>
+  <text x="1225" y="458" class="dim-label">&#x673a;&#x52a8;&#x8f66;&#x9053;</text>
+  <text x="1222" y="544.5" class="dim-label">&#x975e;&#x673a;&#x52a8;&#x8f66;&#x9053;</text>
+  <text x="1219" y="580" class="dim-label">&#x7eff;&#x5316;&#x5e26;</text>
+  <text x="1225" y="610" class="dim-label">&#x4eba;&#x884c;&#x9053;</text>
+
+  <!-- Sub-dimensions: individual lane marks within carriageway -->
+  <g stroke="#9ca3af" stroke-width="0.35" fill="none">
+    <!-- North carriageway lane ticks at x=1160 -->
+    <line x1="1158" y1="284.0" x2="1168" y2="284.0"/>
+    <line x1="1158" y1="326.0" x2="1168" y2="326.0"/>
+    <line x1="1163" y1="242.0" x2="1163" y2="284.0"/>
+    <line x1="1163" y1="284.0" x2="1163" y2="326.0"/>
+    <line x1="1163" y1="326.0" x2="1163" y2="368.0"/>
+    <!-- South carriageway lane ticks -->
+    <line x1="1158" y1="434.0" x2="1168" y2="434.0"/>
+    <line x1="1158" y1="476.0" x2="1168" y2="476.0"/>
+    <line x1="1163" y1="392.0" x2="1163" y2="434.0"/>
+    <line x1="1163" y1="434.0" x2="1163" y2="476.0"/>
+    <line x1="1163" y1="476.0" x2="1163" y2="518.0"/>
+  </g>
+  <text x="1150" y="266" class="dim-label" text-anchor="middle">3.5</text>
+  <text x="1150" y="308" class="dim-label" text-anchor="middle">3.5</text>
+  <text x="1150" y="350" class="dim-label" text-anchor="middle">3.5</text>
+  <text x="1150" y="416" class="dim-label" text-anchor="middle">3.5</text>
+  <text x="1150" y="458" class="dim-label" text-anchor="middle">3.5</text>
+  <text x="1150" y="500" class="dim-label" text-anchor="middle">3.5</text>
+
+  <!-- Level 2: Overall road width -->
+  <g stroke="#9ca3af" stroke-width="0.3" fill="none">
+    <line x1="1205" y1="135.2" x2="1320" y2="135.2"/>
+    <line x1="1205" y1="624.8" x2="1320" y2="624.8"/>
+  </g>
+  <line x1="1305" y1="138" x2="1305" y2="622" stroke="#374151" stroke-width="0.5"/>
+  <polygon points="1305,135.2 1302.5,140 1307.5,140" fill="#374151"/>
+  <polygon points="1305,624.8 1302.5,620 1307.5,620" fill="#374151"/>
+  <text x="1315" y="376" class="dim-text" font-size="9" font-weight="600">40m</text>
+  <text x="1315" y="388" class="dim-label">&#x603b;&#x5bbd;</text>
+
+  <!-- ===== Sign-to-Crosswalk Distance Dimensions (bottom) ===== -->
+  <!-- Extension lines from road bottom to dimension area -->
+  <g stroke="#9ca3af" stroke-width="0.35" fill="none">
+    <line x1="322" y1="624.8" x2="322" y2="654"/>
+    <line x1="502" y1="624.8" x2="502" y2="640"/>
+    <line x1="562" y1="624.8" x2="562" y2="654"/>
+    <line x1="638" y1="624.8" x2="638" y2="654"/>
+    <line x1="698" y1="624.8" x2="698" y2="640"/>
+    <line x1="878" y1="624.8" x2="878" y2="654"/>
+  </g>
+  <!-- Level 1 (y=635): 5m dims + crosswalk width (6m) — continuous chain -->
+  <!-- South 5m: 502→562 -->
+  <line x1="505" y1="635" x2="559" y2="635" stroke="#374151" stroke-width="0.5"/>
+  <polygon points="502,635 507,632.5 507,637.5" fill="#374151"/>
+  <polygon points="562,635 557,632.5 557,637.5" fill="#374151"/>
+  <text x="532" y="632" text-anchor="middle" class="dim-text">5m</text>
+  <!-- Crosswalk width: 562→638 -->
+  <line x1="565" y1="635" x2="635" y2="635" stroke="#374151" stroke-width="0.5"/>
+  <polygon points="562,635 567,632.5 567,637.5" fill="#374151"/>
+  <polygon points="638,635 633,632.5 633,637.5" fill="#374151"/>
+  <text x="600" y="632" text-anchor="middle" class="dim-text">6.0m</text>
+  <!-- North 5m: 638→698 -->
+  <line x1="641" y1="635" x2="695" y2="635" stroke="#374151" stroke-width="0.5"/>
+  <polygon points="638,635 643,632.5 643,637.5" fill="#374151"/>
+  <polygon points="698,635 693,632.5 693,637.5" fill="#374151"/>
+  <text x="668" y="632" text-anchor="middle" class="dim-text">5m</text>
+  <!-- Level 2 (y=650): 20m dims -->
+  <!-- South 20m: 322→562 -->
+  <line x1="325" y1="650" x2="559" y2="650" stroke="#374151" stroke-width="0.5"/>
+  <polygon points="322,650 327,647.5 327,652.5" fill="#374151"/>
+  <polygon points="562,650 557,647.5 557,652.5" fill="#374151"/>
+  <text x="442" y="647" text-anchor="middle" class="dim-text">20m</text>
+  <!-- North 20m: 638→878 -->
+  <line x1="641" y1="650" x2="875" y2="650" stroke="#374151" stroke-width="0.5"/>
+  <polygon points="638,650 643,647.5 643,652.5" fill="#374151"/>
+  <polygon points="878,650 873,647.5 873,652.5" fill="#374151"/>
+  <text x="758" y="647" text-anchor="middle" class="dim-text">20m</text>
+  <!-- Labels -->
+  <text x="532" y="644" text-anchor="middle" class="dim-label">&#x6ce8;&#x610f;&#x884c;&#x4eba;&#x2192;&#x6591;&#x9a6c;&#x7ebf;</text>
+  <text x="600" y="644" text-anchor="middle" class="dim-label">&#x4eba;&#x884c;&#x6a2a;&#x9053;</text>
+  <text x="668" y="644" text-anchor="middle" class="dim-label">&#x6ce8;&#x610f;&#x884c;&#x4eba;&#x2192;&#x6591;&#x9a6c;&#x7ebf;</text>
+  <text x="442" y="659" text-anchor="middle" class="dim-label">&#x4eba;&#x884c;&#x6a2a;&#x9053;&#x6807;&#x5fd7;&#x2192;&#x6591;&#x9a6c;&#x7ebf;</text>
+  <text x="758" y="659" text-anchor="middle" class="dim-label">&#x4eba;&#x884c;&#x6a2a;&#x9053;&#x6807;&#x5fd7;&#x2192;&#x6591;&#x9a6c;&#x7ebf;</text>
+
+  <!-- ===== Title Block ===== -->
+  <rect x="0" y="750" width="1400" height="50" fill="#f9fafb" stroke="#9ca3af" stroke-width="1"/>
+  <text x="600.0" y="772" text-anchor="middle" font-size="14" fill="#111827" font-weight="700">&#x8def;&#x6bb5;&#x4e2d;&#x95f4;&#x975e;&#x706f;&#x63a7;&#x884c;&#x4eba;&#x8fc7;&#x8857;&#x70b9;&#x4f4d;&#x603b;&#x5e73;&#x9762;&#x56fe;</text>
+  <text x="600.0" y="790" text-anchor="middle" font-size="11" fill="#6b7280">Overall Layout Plan of Non-signalized Pedestrian Crossing Point</text>
+
+  <!-- ===== North Arrow ===== -->
+  <circle cx="1120" cy="75" r="18" fill="none" stroke="#374151" stroke-width="1.2"/>
+  <path d="M 1120,87 L 1120,63 M 1115,69 L 1120,61 L 1125,69" stroke="#374151" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1120" y="105" text-anchor="middle" font-size="12" fill="#374151" font-weight="700">N</text>
+
+  <!-- ===== Scale Bar ===== -->
+  <line x1="1000" y1="732" x2="1120" y2="732" stroke="#374151" stroke-width="1.5"/>
+  <line x1="1000" y1="728" x2="1000" y2="736" stroke="#374151" stroke-width="1"/>
+  <line x1="1120" y1="728" x2="1120" y2="736" stroke="#374151" stroke-width="1"/>
+  <text x="1060.0" y="726" text-anchor="middle" font-size="10" fill="#374151">10m</text>
+</svg>
